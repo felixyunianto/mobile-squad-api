@@ -33,5 +33,11 @@ module.exports = {
     database: DB_DATABASE_PRODUCTION,
     host: DB_HOST_PRODUCTION,
     dialect: DB_DIALECT,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   },
 };
